@@ -94,6 +94,12 @@ nav:
     #- "Managed File Transfer":
     #    - "Quickstart": services/mft/quickstart.md
     #    - "Using the MFT": services/mft/using-the-mft.md
+  - "Software Tool Services":
+     - "Container Image Registry": 
+        - "Overview": services/registry/index.md
+        - "Projects": services/registry/projects.md
+        - "Public Caches": services/registry/public-cache.md
+        - "Working with ECIR": services/registry/working-with.md
   - "Safe Haven Services":
      - "Overview": safe-haven-services/overview.md
      - "Network Access Controls": safe-haven-services/network-access-controls.md

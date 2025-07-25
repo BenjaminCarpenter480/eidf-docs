@@ -31,3 +31,7 @@ Projects can request that images with vulnerabilities about a set level cannot b
 ### Software Bill of Materials (SBOM)
 
 SBOMs will be automatically generated on push to the ECIR and associated with an image. This will list what is in an image with its version and license information where possible.
+
+## FAQ and Known Issues
+
+The FAQ and known issues can be found in the [ECIR FAQ](faq.md)

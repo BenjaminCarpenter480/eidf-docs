@@ -8,7 +8,7 @@ Every EIDF project can request that a project with the ECIR is created for them.
 
 Each project will be given 50 GiB of storage for images to use.
 
-Request for increase in quota should be submitted via the [EIDF Portal](https://portal.eidf.ac.uk).
+Requests for increase in quota should be submitted via the [EIDF Portal](https://portal.eidf.ac.uk).
 
 ### Naming
 

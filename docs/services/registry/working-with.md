@@ -20,7 +20,7 @@ Clicking on a tag in a repository will open up the information on the artifact, 
 
 ## Using from the Command Line (Docker)
 
-Important: Run these commands on a system that has Docker installed and has access to the EIDF Registry.
+Important: Run these commands on a system that has Docker installed and has access to the ECIR.
 
 To login to the registry from a Docker client, you should use the following:
 
@@ -63,7 +63,7 @@ To pull images from the registry, from private or authenticated projects, you wi
 ### Secret Creation when logged into via Docker config.json
 
 !!! important
-    This section requires that you have logged into EIDF registry via Docker as described in *Using from the command line (Docker)* It also requires that kubectl is installed.
+    This section requires that you have logged into ECIR via Docker as described in *Using from the command line (Docker)* It also requires that kubectl is installed.
 
 Running the following command will create a secret `<secret-name>` in your project namespace. This can be used for Kubernetes to pull from your private repositories.
 
@@ -78,7 +78,7 @@ kubectl create secret generic <secret-name> \
 
 ### YAML File Creation
 
-Important: Run these commands on a system that has kubectl installed and has access to the EIDF Registry.
+Important: Run these commands on a system that has kubectl installed and has access to the ECIR.
 
 Encode your authorisation information into base64 for the secret:
 
@@ -130,7 +130,7 @@ kubectl apply -f <your filename> -n <your namespace>
 
 ### Using in a Job
 
-Use the image name from the pull command for the repository. For example, this could be `registry.eidf.ac.uk/nvidia-cache/nvidia/k8s/cuda-sample:nbody` which is our EIDF Registry cached version of the [NVIDIA sample](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/k8s/containers/cuda-sample): `nvcr.io/nvidia/k8s/cuda-sample:nbody`.
+Use the image name from the pull command for the repository. For example, this could be `registry.eidf.ac.uk/nvidia-cache/nvidia/k8s/cuda-sample:nbody` which is the ECIR cached version of the [NVIDIA sample](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/k8s/containers/cuda-sample): `nvcr.io/nvidia/k8s/cuda-sample:nbody`.
 
 This is an example using an image and secret to access the registry. Replace the appropriate values with your own configuration.
 

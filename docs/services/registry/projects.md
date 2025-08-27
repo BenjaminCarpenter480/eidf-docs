@@ -29,7 +29,7 @@ Vulnerabilities are ranked:
 * Medium
 * Low
 
-Vulnerability scanning is provided via trivy, more information about severity levels can be found on the [trivy documentation](https://trivy.dev/latest/docs/scanner/vulnerability/#severity-selection).
+Vulnerability scanning is provided via Trivy, more information about severity levels can be found on the [trivy documentation](https://trivy.dev/latest/docs/scanner/vulnerability/#severity-selection).
 
 ### Permissions
 

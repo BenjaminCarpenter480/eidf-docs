@@ -65,12 +65,12 @@ To pull images from the registry, from private or authenticated projects, you wi
 Important: Run these commands on a system that has Docker, kubectl installed and has access to the EIDF Registry.
 
 ```bash
-kubectl create secret generic eidfreg \
+kubectl create secret generic <secret-name> \
     --from-file=.dockerconfigjson=<path/to/.docker/config.json> \
     --type=kubernetes.io/dockerconfigjson -n <your namespace>
 ```
 
-Running this will create a secret eidfreg in your project namespace. This can be used for Kubernetes to pull from your private repositories.
+Running this will create a secret `<secret-name>` in your project namespace. This can be used for Kubernetes to pull from your private repositories.
 
 ### YAML File Creation
 
@@ -126,7 +126,7 @@ kubectl apply -f <your filename> -n <your namespace>
 
 ### Using in a Job
 
-Use the image name from the pull command for the repository. For example, this could be "registry.eidf.ac.uk/library/cuda-nbody:latest".
+Use the image name from the pull command for the repository. For example, this could be "registry.eidf.ac.uk/nvidia-cache/nvidia/k8s/cuda-sample:nbody" which is our EIDF Registry cached [NVIDIA sample](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/k8s/containers/cuda-sample):  nvcr.io/nvidia/k8s/cuda-sample:nbody.
 
 This is an example using an image and secret to access the registry. Replace the appropriate values with your own configuration.
 
@@ -147,7 +147,7 @@ spec:
     spec:
       containers:
         - name: cudasample
-          image: registry.eidf.ac.uk/library/cuda-nbody:latest
+          image: `registry.eidf.ac.uk/nvidia-cache/nvidia/k8s/cuda-sample:nbody`
           args:
             - '-benchmark'
             - '-numbodies=512000'
@@ -163,5 +163,5 @@ spec:
               nvidia.com/gpu: 1
       restartPolicy: Never
       imagePullSecrets:
-        - name: <your secret>
+        - name: <secret-name>
 ```

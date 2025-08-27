@@ -126,7 +126,7 @@ kubectl apply -f <your filename> -n <your namespace>
 
 ### Using in a Job
 
-Use the image name from the pull command for the repository. For example, this could be "registry.eidf.ac.uk/nvidia-cache/nvidia/k8s/cuda-sample:nbody" which is our EIDF Registry cached [NVIDIA sample](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/k8s/containers/cuda-sample):  nvcr.io/nvidia/k8s/cuda-sample:nbody.
+Use the image name from the pull command for the repository. For example, this could be `registry.eidf.ac.uk/nvidia-cache/nvidia/k8s/cuda-sample:nbody` which is our EIDF Registry cached version of the [NVIDIA sample](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/k8s/containers/cuda-sample): `nvcr.io/nvidia/k8s/cuda-sample:nbody`.
 
 This is an example using an image and secret to access the registry. Replace the appropriate values with your own configuration.
 

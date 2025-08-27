@@ -62,7 +62,10 @@ To pull images from the registry, from private or authenticated projects, you wi
 
 ### Secret Creation when logged into via Docker config.json
 
-Important: Run these commands on a system that has Docker, kubectl installed and has access to the EIDF Registry.
+!!! important
+    This section requires that you have logged into EIDF registry via Docker as described in *Using from the command line (Docker)* It also requires that kubectl is installed.
+
+Running the following command will create a secret `<secret-name>` in your project namespace. This can be used for Kubernetes to pull from your private repositories.
 
 ```bash
 kubectl create secret generic <secret-name> \
@@ -70,7 +73,8 @@ kubectl create secret generic <secret-name> \
     --type=kubernetes.io/dockerconfigjson -n <your namespace>
 ```
 
-Running this will create a secret `<secret-name>` in your project namespace. This can be used for Kubernetes to pull from your private repositories.
+!!! warning
+    Usage of `~` to denote your home directory in the above command does not work.
 
 ### YAML File Creation
 

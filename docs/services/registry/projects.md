@@ -8,7 +8,7 @@ Every EIDF project can request that a project with the ECIR is created for them.
 
 Each project will be given 50 GiB of storage for images to use.
 
-Request for increase should be submitted as a request via the [EIDF Portal](https://portal.eidf.ac.uk).
+Request for increase in quota should be submitted via the [EIDF Portal](https://portal.eidf.ac.uk).
 
 ### Naming
 
@@ -28,6 +28,8 @@ Vulnerabilities are ranked:
 * High
 * Medium
 * Low
+
+Vulnerability scanning is provided via trivy, more information about severity levels can be found on the [trivy documentation](https://trivy.dev/latest/docs/scanner/vulnerability/#severity-selection).
 
 ### Permissions
 

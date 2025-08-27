@@ -26,7 +26,7 @@ The report will highlight fixable known issues.
 
     Just because Trivy indicates few or no vulnerabilities this does not mean the scanned image is free of security issues, Trivy can only scan for known issues and specific types of security problems.
 
-Projects can request that images with vulnerabilities about a set level cannot be deployed from the ECIR.
+Projects can request that images with vulnerabilities above a set level not be deployed from the ECIR.
 
 ### Software Bill of Materials (SBOM)
 

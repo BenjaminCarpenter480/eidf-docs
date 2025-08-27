@@ -1,7 +1,7 @@
 # FAQ
 
-# Known Issues
+## Known Issues
 
-## SBOM says no SBOM
+### SBOM says no SBOM
 
 bit about OCI artifacts

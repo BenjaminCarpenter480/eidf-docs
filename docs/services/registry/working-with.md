@@ -18,7 +18,7 @@ Each repository in a project has a COPY PULL button option once an image/artifac
 
 Clicking on a tag in a repository will open up the information on the artifact, this can include an overview of the image, vulnerability summary, SBOM and build history.
 
-## Using from the Command Line (Docker)
+## Using from the Command Line with Docker
 
 Important: Run these commands on a system that has Docker installed and has access to the ECIR.
 
@@ -60,12 +60,12 @@ From your command line, you can now push and pull images to the registry.
 
 To pull images from the registry, from private or authenticated projects, you will need to add a secret to the namespace you are using and reference it in your job definition. Note that user tokens have a limited validity period. If you are regularly using a repository from a project, it would be recommended to create a robot account with limited privileges, this is discussed below.
 
-### Secret Creation when logged into via Docker config.json
+### Secret Creation via Docker config.json
 
-!!! important
-    This section requires that you have logged into ECIR via Docker as described in *Using from the command line (Docker)* It also requires that kubectl is installed.
+!!! Tip
+    This section requires that you have logged into ECIR via Docker as described in *[Using from the command line with Docker)](#using-from-the-command-line-with-docker)* It also requires that kubectl is installed.
 
-Running the following command will create a secret `<secret-name>` in your project namespace. This can be used for Kubernetes to pull from your private repositories.
+Running the following command will create a secret `<secret-name>` in your project namespace. This can be used by Kubernetes to pull from your private repositories.
 
 ```bash
 kubectl create secret generic <secret-name> \
@@ -130,7 +130,7 @@ kubectl apply -f <your filename> -n <your namespace>
 
 ### Using in a Job
 
-Use the image name from the pull command for the repository. For example, this could be `registry.eidf.ac.uk/nvidia-cache/nvidia/k8s/cuda-sample:nbody` which is the ECIR cached version of the [NVIDIA sample](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/k8s/containers/cuda-sample): `nvcr.io/nvidia/k8s/cuda-sample:nbody`.
+Use the image name from the pull command for the repository. For example, this could be `registry.eidf.ac.uk/nvidia-cache/nvidia/k8s/cuda-sample:nbody`, the ECIR cached version of the [NVIDIA sample](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/k8s/containers/cuda-sample): `nvcr.io/nvidia/k8s/cuda-sample:nbody`.
 
 This is an example using an image and secret to access the registry. Replace the appropriate values with your own configuration.
 

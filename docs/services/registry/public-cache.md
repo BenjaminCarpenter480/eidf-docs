@@ -6,7 +6,7 @@ ECIR provides a common library of standard images. ECIR will also provide cache 
 
 The Library is a public project containing ECIR copies of commonly used container images on the GPU Service. This will be updated over time to reflect use and updates on the service.
 
-To use an image from the Library, the image name should be preceded by registry.eidf.ac.uk/library, for example if an Ubuntu image with the tag latest were available in the Library it would be:
+To use an image from the Library, the image name should be preceded by `registry.eidf.ac.uk/library`, for example if an Ubuntu image with the tag `latest` were available in the Library it would be accessed with:
 
 ```bash
 registry.eidf.ac.uk/library/ubuntu:latest
@@ -16,9 +16,9 @@ Use of images from the Library will not count towards project image storage on t
 
 The Library will be updated as images are deprecated or updated and is read only for project users.
 
-Users can use public registries to download images, the ECIR is in place to try to reduce request load on public systems.
+Whilst users can use public registries to download images, ECIR aims to reduce request load on public systems and provide a local cache to speed up image access. This helps provide a consistent experience as though downloading from the source but with faster download times.
 
-Users can submit images to be added to the Library where they have built images they think would be useful for other users.
+Users can submit images to be added to the Library where they think these would be beneficial for many users or for images that are accessed frequently. These can be self built images or public images. These should be submit via the [EIDF helpdesk](https://portal.eidf.ac.uk/queries/submit) giving the image details, such as image source and tag(s), as well as justification for inclusion.
 
 ## Public Caches
 

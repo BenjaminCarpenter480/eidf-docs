@@ -4,11 +4,11 @@ EIDF Container Image Registry (ECIR) is an image registry for use in EIDF and re
 
 ## Projects on ECIR
 
-ECIR provides projects with a private space on the service where a project can host multiple container image repositories. For information on what projects get with an ECIR private space, see [ECIR project space](./projects.md)
+ECIR provides projects with a private space on the service where a project can host multiple container image repositories. For information on what projects get with an ECIR private space, see [ECIR project space](./projects.md).
 
 ## Public Cache on ECIR
 
-ECIR hosts public cache projects for commonly used images. If you use an image which is commonly pulled from public repositories, using a cache copy can reduce the impact on public services. For information on the current public caches, see [Public Caches](./public-cache.md)
+ECIR hosts public cache projects for commonly used images. If you use an image which is commonly pulled from public repositories, using a cache copy can reduce the impact on public services. For information on the current public caches, see [Public Caches](./public-cache.md).
 
 ## Working with ECIR
 
@@ -22,7 +22,7 @@ All images in the ECIR will be scanned by [Trivy](https://trivy.dev/latest/) by 
 
 The report will highlight fixable known issues.
 
-!!! important "Not Foolproof"
+!!! Danger "Not Foolproof"
 
     Just because Trivy indicates few or no vulnerabilities this does not mean the scanned image is free of security issues, Trivy can only scan for known issues and specific types of security problems.
 
@@ -34,4 +34,4 @@ SBOMs will be automatically generated on push to the ECIR and associated with an
 
 ## FAQ and Known Issues
 
-The FAQ and known issues can be found in the [ECIR FAQ](faq.md)
+The FAQ and known issues can be found in the [ECIR FAQ](faq.md).

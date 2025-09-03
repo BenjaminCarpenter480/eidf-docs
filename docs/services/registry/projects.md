@@ -33,8 +33,17 @@ Vulnerability scanning is provided via Trivy, more information about severity le
 
 ### Permissions
 
-ECIR users have the project maintainer role permissions.
+ECIR users have the [project maintainer role permissions](https://goharbor.io/docs/2.3.0/administration/managing-users/user-permissions-by-role/), this allows users to:
 
-This allows users to create and delete repositories in a project, to push and pull images from a project, initiate vulnerability and SBOM scans, view the results of scans, edit the labels available to a project and work on the policy rules for a project.
+* Create and delete repositories in a project
+* Push and pull images from a project
+* Initiate vulnerability and SBOM scans
+* View the results of scans
+* Edit the labels available to a project
+* Work on the policy rules for a project.
 
-Project maintainers do not have the permissions to create new projects, edit project configuration or delete projects.
+Project maintainers **do not** have the permissions to:
+
+* Create new projects
+* Edit project configuration
+* Delete projects.

@@ -456,3 +456,7 @@ This process allows code development to be conducted on any device/VM with acces
     ```bash
     kubectl -n <project-namespace> create -f <job-yaml-file>
     ```
+
+## Automation of Workflow
+
+The above workflow requires manual work to create and submit the K8s job. It is possible to automate this using GitLab CI/CD which can be seen in [CI/CD Job Submission](./L5_cicd_job_submission.md).

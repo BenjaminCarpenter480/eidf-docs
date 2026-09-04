@@ -39,3 +39,11 @@ For a more complete set of documentation relating to adding and using SSH keys w
 ## CI/CD Examples
 
 A repository containing some common Gitlab CI/CD configurations and relevant examples is maintained at at [Gitlab CI/Cd Examples](https://gitlab.eidf.ac.uk/Liz/cicd-examples)
+
+## EIDF Container Image Registry and GitLab Integration
+
+EIDF GitLab can integrate with the EIDF Container Image Registry (ECIR) to automatically provide registry credentials to CI/CD pipelines. When enabled, the variables `HARBOR_HOST`, `HARBOR_USERNAME`, `HARBOR_PASSWORD`, and `HARBOR_PROJECT` are automatically available in your `.gitlab-ci.yml` — no manual secret configuration needed.
+
+Documentation for setting up this integration can be found on GitLab's [Harbor GitLab integration](https://docs.gitlab.com/user/project/integrations/harbor/#configure-gitlab). 
+
+For more information on ECIR, see [Container Image Registry Overview](../registry/index.md).

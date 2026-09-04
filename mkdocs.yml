@@ -86,6 +86,7 @@ nav:
          - "Persistent Volumes": services/gpuservice/training/L2_requesting_persistent_volumes.md
          - "Running a Pytorch Pod": services/gpuservice/training/L3_running_a_pytorch_task.md
          - "Template K8s Workflow": services/gpuservice/training/L4_template_workflow.md
+         - "CI/CD Job Submission": services/gpuservice/training/L5_cicd_job_submission.md
       - "GPU Service FAQ": services/gpuservice/faq.md
     - "Notebooks":
       - "Overview": services/jhub/index.md
